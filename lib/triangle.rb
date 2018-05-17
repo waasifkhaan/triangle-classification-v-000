@@ -8,7 +8,7 @@ class Triangle
   end 
   def kind
     
-    if @one + @two > @three || @one + @three > @two || @two + @three > @one || @one == 0 || @two == 0 || @three == 0
+    if @one + @two <= @three || @one + @three <= @two || @two + @three <= @one || @one == 0 || @two == 0 || @three == 0
       #binding.pry
       begin
         raise TriangleError
