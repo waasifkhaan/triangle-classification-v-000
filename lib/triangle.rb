@@ -18,9 +18,10 @@ class Triangle
     end
     else  
       scalene.to_sym
+    end 
   end
 end 
-end 
+ 
   
 
 class TriangleError < StandardError
