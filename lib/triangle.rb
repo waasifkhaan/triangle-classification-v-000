@@ -18,5 +18,8 @@ end
 end
 class TriangleError < StandardError
     # triangle error code
+    def message 
+    "The sum of any two sides of the triangle needs to be greater than the third side. Please redefine the sides of your triangle!!"
+  end
   end
 end
