@@ -6,6 +6,8 @@ def initialize (side_1 , side_2:, side_3)
   @three = side3
 end 
 def kind
+  if @one == @two == @three
+    equilateral.to_s
   
   
 end
