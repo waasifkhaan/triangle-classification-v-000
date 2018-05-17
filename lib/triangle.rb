@@ -11,11 +11,11 @@ class Triangle
     else if @one == @two || @one == @three || @two == @three
       isosceles.to_sym
     else if @one + @two < @three || @one + @three < @two || @two + @three < @one || @one = 0 || @two = 0 || @three = 0
-    begin
-      raise TriangleError
-    rescue TriangleError => error
-      puts error.message
-    end
+      begin
+        raise TriangleError
+      rescue TriangleError => error
+        puts error.message
+      end
     else  
       scalene.to_sym
     end 
