@@ -7,16 +7,16 @@ def initialize (side_1 , side_2:, side_3)
 end 
 def kind
   if @one == @two == @three
-    if @one + @two < @three || @one + @three < @two || @two + @three < @one
+    equilateral.to_sym
+  else if @one == @two || @one == @three || @two == @three
+    isosceles.to_sym
+  else 
+    if @one + @two < @three || @one + @three < @two || @two + @three < @one || @one = 0 || @two = 0 || @three = 0
       begin
         raise TriangleError
       rescue TriangleError => error
           puts error.message
       end
-    equilateral.to_sym
-  else if @one == @two || @one == @three || @two == @three
-    isosceles.to_sym
-  else 
     scalene.to_sym
   end 
 end 
