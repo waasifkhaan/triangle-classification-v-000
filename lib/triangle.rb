@@ -1,9 +1,11 @@
 class Triangle
-def initialize (side1: , side2:, side3)
+  attr_reader :one, :two, :three
+def initialize (side_1 , side_2:, side_3)
   @one = side1
   @two = side2
   @three = side3
 end 
-def kind 
+def kind
+  
   
 end
