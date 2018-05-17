@@ -6,16 +6,17 @@ class Triangle
     @three = side_3
   end 
   def kind
-    if @one == @two && @one == @three && @two == @three 
-      :equilateral
-    elsif @one == @two || @one == @three || @two == @three
-      :isosceles
-    elsif @one + @two < @three || @one + @three < @two || @two + @three < @one || @one ==0 || @two == 0 || @three == 0
+    
+    if @one + @two < @three || @one + @three < @two || @two + @three < @one || @one == 0 || @two == 0 || @three == 0
       begin
         raise TriangleError
       rescue TriangleError => error
         puts error.message
       end
+    elsif @one == @two && @one == @three && @two == @three 
+      :equilateral
+    elsif @one == @two || @one == @three || @two == @three
+      :isosceles
     else  
       :scalene
     end 
