@@ -10,7 +10,7 @@ class Triangle
       :equilateral
     elsif @one == @two || @one == @three || @two == @three
       :isosceles
-    elsif @one + @two < @three || @one + @three < @two || @two + @three < @one || @one = 0 || @two = 0 || @three = 0
+    elsif @one + @two < @three || @one + @three < @two || @two + @three < @one || @one ==0 || @two == 0 || @three == 0
       begin
         raise TriangleError
       rescue TriangleError => error
