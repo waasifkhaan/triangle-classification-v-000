@@ -8,6 +8,11 @@ end
 def kind
   if @one == @two == @three
     equilateral.to_sym
-  
+  else if @one == @two || @one == @three || @two == @three
+    isosceles.to_sym
+  else 
+    scalene.to_sym
+  end 
+end 
   
 end
