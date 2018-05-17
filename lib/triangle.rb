@@ -7,10 +7,10 @@ def initialize (side_1 , side_2:, side_3)
 end 
 def kind
   if @one == @two == @three
-    if @one + @two < @three
+    if @one + @two < @three || @one + @three < @two || @two + @three < @one
       begin
         raise TriangleError
-      ``rescue TriangleError => error
+      rescue TriangleError => error
           puts error.message
       end
     equilateral.to_sym
