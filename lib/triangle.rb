@@ -7,7 +7,7 @@ class Triangle
   end 
   def kind
     if @one == @two || @one == @three || @two == @three 
-      equilateral.to_sym
+      equilateral:
     elsif @one == @two || @one == @three || @two == @three
       isosceles.to_sym
     elsif @one + @two < @three || @one + @three < @two || @two + @three < @one || @one = 0 || @two = 0 || @three = 0
