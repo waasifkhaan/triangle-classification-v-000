@@ -20,7 +20,8 @@ def kind
     end
   end 
   scalene.to_sym
-  end 
+  end
+end 
 end 
   
 
