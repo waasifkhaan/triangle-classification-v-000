@@ -29,6 +29,5 @@ class TriangleError < StandardError
     def message 
     "The sum of any two sides of the triangle needs to be greater than the third side and also sides must be greater than 0. Please redefine the sides of your triangle!!"
     end
-  end 
+end 
   
-
