@@ -8,9 +8,9 @@ class Triangle
   def kind
     if @one == @two || @one == @three || @two == @three 
       equilateral.to_sym
-    else if @one == @two || @one == @three || @two == @three
+    elsif @one == @two || @one == @three || @two == @three
       isosceles.to_sym
-    else if @one + @two < @three || @one + @three < @two || @two + @three < @one || @one = 0 || @two = 0 || @three = 0
+    elsif @one + @two < @three || @one + @three < @two || @two + @three < @one || @one = 0 || @two = 0 || @three = 0
       begin
         raise TriangleError
       rescue TriangleError => error
