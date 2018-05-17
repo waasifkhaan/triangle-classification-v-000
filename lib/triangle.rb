@@ -10,7 +10,7 @@ def kind
     if @one + @two < @three
       begin
         raise TriangleError
-      rescue TriangleError => error
+      ``rescue TriangleError => error
           puts error.message
       end
     equilateral.to_sym
