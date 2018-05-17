@@ -19,8 +19,9 @@ class Triangle
     else  
       scalene.to_sym
     end 
+  end 
   
-  end
+  
  
   class TriangleError < StandardError
     def message 
