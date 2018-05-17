@@ -1,9 +1,9 @@
 class Triangle
   attr_reader :one, :two, :three
 def initialize (side_1 , side_2 , side_3)
-  @one = side1
-  @two = side2
-  @three = side3
+  @one = side_1
+  @two = side_2
+  @three = side_3
 end 
 def kind
   if @one == @two == @three
