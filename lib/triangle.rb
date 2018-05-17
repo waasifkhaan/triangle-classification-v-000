@@ -12,8 +12,8 @@ class Triangle
       #binding.pry
       begin
         raise TriangleError
-      #rescue TriangleError => error
-       # puts error.message
+      rescue TriangleError => error
+        puts error.message
       end
     elsif @one == @two && @one == @three && @two == @three 
       :equilateral
