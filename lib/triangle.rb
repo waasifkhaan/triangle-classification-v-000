@@ -7,9 +7,9 @@ class Triangle
   end 
   def kind
     if @one == @two || @one == @three || @two == @three 
-      equilateral:
+      :equilateral
     elsif @one == @two || @one == @three || @two == @three
-      isosceles.to_sym
+      :isosceles
     elsif @one + @two < @three || @one + @three < @two || @two + @three < @one || @one = 0 || @two = 0 || @three = 0
       begin
         raise TriangleError
@@ -17,7 +17,7 @@ class Triangle
         puts error.message
       end
     else  
-      scalene.to_sym
+      :scalene
     end 
   end 
   
